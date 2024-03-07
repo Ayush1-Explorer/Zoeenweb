@@ -20,6 +20,10 @@ const Header = () => {
             className="relative z-2 flex flex-col items-center 
           justify-center m-auto | lg:flex-row"
           >
+            {navigation.map((item) => (
+              <a key={item.id} href={item.url}>
+                {item.title}
+              
             
               </a>
             ))}
